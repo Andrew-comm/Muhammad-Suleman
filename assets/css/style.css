@@ -50,6 +50,41 @@
   margin: 4px;
 }
 
+.hero {
+  background-image: url("../img/hero-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-blend-mode: overlay;
+  display: grid;
+  place-items: center;
+  min-height: 600px;
+  text-align: center;
+  padding-top: 125px;
+}
+
+.hero-title { 
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-text {
+  color:white;
+  font-size: var(--fs-5);
+  margin-bottom: 40px;
+}
+
+.btn-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+
 .github {
   color: black;
 }
@@ -81,24 +116,24 @@
 
 /* Buttons - Read Me, Contact Us */
 
-.readme {
-  position: relative;
-  padding: 11px 35px;
-  background: #fff;
-  color: #00796b;
-  border: 2px solid #fff;
-  font-weight: 600;
-  font-size: 15px;
-  letter-spacing: 1px;
-  display: inline-block;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
+/*-----------------------------------*\
+ * #GALLERY
+\*-----------------------------------*/
+
+.gallery { padding-block: var(--section-padding); }
+
+.gallery-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 }
 
-/* .readme:hover{
-  color: white;
-  background-color: #00796b;
-} */
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-15);
+  overflow: hidden;
+}
 
 .contactme {
   position: relative;
@@ -119,6 +154,136 @@
   color: #00796b;
   background-color: white;
 }
+/* Ensure basic styling for the container */
+.popular .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling the section subtitle and title */
+.section-subtitle, .section-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Ensuring the section text is centered and has appropriate spacing */
+.section-text {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+/* Styling the list to have no default padding or margin and use flexbox */
+.popular-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Ensuring each card is spaced nicely and has fixed dimensions */
+.popular-card {
+  width: 400px;
+  height: 400px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensuring the image fits within the card and is nicely rounded */
+.popular-card .card-img {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.popular-card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Styling the content of each card */
+.popular-card .card-content {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Styling the rating icons */
+.card-rating {
+  margin-bottom: 5px;
+}
+
+.card-rating a {
+  color: #FFD700;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+/* Ensuring the card subtitle and title are spaced nicely */
+.card-subtitle a, .card-title a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+/* Ensuring the card subtitle has spacing */
+.card-subtitle {
+  margin-bottom: 5px;
+}
+
+/* Ensuring the card text is spaced and styled nicely */
+.card-text {
+  color: #555;
+  margin-bottom: 0;
+  font-size: 0.9em;
+}
+
+/* Styling the button */
+.btn-primary {
+  display: block;
+  margin: 40px auto 0;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .popular-card {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .popular-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /* main body */
 
 /* body-color */
@@ -128,44 +293,152 @@ body {
   font-size: 18px;
 }
 
-/* body {
-  color: black;
-  font-size: 18px;
-} */
 
-/* main a -- links */
-
-/* a {
-  color: #009688;
-} */
 
 a {
   color: #004d40;
 }
 
-/* main blockqoute */
 
-/* blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
-  font-size: 125%;
-  font-weight: 400;
-  margin: 20px 0;
-  padding-left: 1.5rem;
-} */
 
-blockquote {
-  border-left: 5px solid #795548;
-  color: #795548;
-  font-size: 125%;
-  font-weight: 400;
-  margin: 20px 0;
-  padding-left: 1.5rem;
+.package {
+  padding-block: var(--section-padding);
 }
 
-blockquote * {
-  font-size: inherit;
-  line-height: inherit;
+.package-list {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px; /* Reduce the spacing between cards */
+}
+
+.package-list > li {
+  flex: 1 1 calc(33.333% - 10px); /* Ensure three cards per row with equal spacing */
+  max-width: calc(33.333% - 10px);
+}
+
+.package-card {
+  background: var(--cultured);
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.package-card .card-banner {
+  height: 200px; /* Reduce the height of the image */
+}
+
+.package-card .card-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.package-card .card-content {
+  padding: 20px 15px;
+  flex-grow: 1; /* Ensure the content grows to fill the available space */
+}
+
+.package-card .card-title {
+  margin-bottom: 10px;
+}
+
+.package-card .card-text {
+  line-height: 1.4;
+  margin-bottom: 15px;
+  font-size: var(--fs-6); /* Adjust font size for better fit */
+}
+
+.card-meta-list {
+  background: var(--white);
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.15);
+  border-radius: 50px;
+  margin-bottom: 15px; /* Add spacing below meta list */
+}
+
+.card-meta-item {
+  position: relative;
+}
+
+.card-meta-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -1px;
+  bottom: 4px;
+  width: 1px;
+  background: hsla(0, 0%, 0%, 0.3);
+}
+
+.meta-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding-inline: 9px;
+  color: var(--black-coral);
+  font-size: var(--fs-8);
+}
+
+.meta-box > ion-icon {
+  color: var(--bright-navy-blue);
+  font-size: 13px;
+}
+
+.package-card .card-price {
+  background: var(--united-nations-blue);
+  color: var(--white);
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.package-card .card-price .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.package-card .card-price .reviews {
+  font-size: var(--fs-5);
+}
+
+.package-card .card-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+  font-size: 14px;
+}
+
+.package-card .card-rating ion-icon:last-child {
+  color: hsl(0, 0%, 80%);
+}
+
+.package-card .price {
+  font-size: var(--fs-2);
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-800);
+  margin-bottom: 10px;
+}
+
+.package-card .price span {
+  font-size: var(--fs-7);
+  font-weight: initial;
+}
+
+.package .btn {
+  margin-inline: auto;
 }
 
 .text-center {
@@ -180,11 +453,7 @@ nav {
   height: 0;
 }
 
-/* nav {
-  background: rgb(149, 126, 212);
-  box-shadow: none;
-  height: 0;
-} */
+
 
 nav i {
   padding: 0 15px;
@@ -192,12 +461,7 @@ nav i {
   top: 5px;
 }
 
-/* main */
 
-/* main {
-  background: url(../../assets/img/bg.png) repeat;
-  padding-left: 190px;
-} */
 
 main {
   background: url(../../assets/img/bg.png) repeat;
@@ -227,13 +491,7 @@ ul.side-nav li {
   padding: 0;
 }
 
-/* ul.side-nav.fixed a {
-  box-sizing: content-box;
-  color: rgb(48, 122, 207);
-  display: block;
-  line-height: 100%;
-  padding: 10px 0 12px;
-} */
+
 
 ul.side-nav.fixed a {
   box-sizing: content-box;
@@ -248,13 +506,6 @@ ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
   font-weight: 200;
 }
 
-/* ul.side-nav.fixed li.logo {
-  background-color: #fafafa;
-  border-bottom: 1px solid #ddd;
-  box-sizing: content-box;
-  min-height: 90px;
-  padding: 30px 30px 40px;
-} */
 
 ul.side-nav.fixed li.logo {
   background-color: #fafafa;
@@ -312,12 +563,7 @@ h3 {
   height: 100vh;
 }
 
-/* Original */
 
-/* #intro.section {
-  background: url(../../assets/img/white-ai-wallpaper.jpg) no-repeat top center/cover;
-  position: relative;
-} */
 
 #intro.section {
   background: #a7ffeb repeat;
@@ -332,12 +578,7 @@ h3 {
   top: 0;
 }
 
-/* #intro.section .container *:not(span) {
-  font-weight: 300;
-  line-height: 150%;
-  padding: 0 30px;
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-} */
+
 
 #intro.section .container *:not(span) {
   font-weight: 300;
@@ -466,11 +707,6 @@ a.hoverline {
   -webkit-transition: 0.25s all;
 }
 
-/* main a.hoverline */
-
-/* a.hoverline:hover {
-  border-bottom: 3px solid #24305e !important;
-} */
 
 a.hoverline:hover {
   border-bottom: 3px solid #004d40 !important;
