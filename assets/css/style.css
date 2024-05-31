@@ -1045,6 +1045,140 @@ small {
   width: 130px;
 }
 
+/* book section */
+#book{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/explore-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px;
+  color: #fff;
+}
+.book-content-par{
+  display: flex;
+}
+.book-counter{
+  flex: 1;
+}
+.book-form{
+  flex: 1;
+}
+.book-counter h3{
+  font-size: 100px;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+div#clockdiv{
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  display: inline-block;
+}
+div#clockdiv > div{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding:10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 30px #fff ;
+  margin-right: 20px;
+}
+.smalltext{
+  font-size: 25px;
+  padding-top: 5px;
+}
+div#clockdiv span{
+  padding:15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+input[type="text"]:focus, select:focus, textarea:focus{
+  border:2px solid #00a8b4;
+  outline: none;
+}
+input[type="text"], select, textarea{
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  color: #00a8c5;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+input[type="submit"]:hover{
+  background-color: rgba(255, 255, 255, 0.5);
+}
+input[type="submit"]{
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  width: 100%;
+  border: 1px solid #fff;
+  padding:12px 0px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+
+/* Slides Section */
+.slides{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.slide_1{
+  /* background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/recipe_slides/recipe1.jpg); */
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 60px;
+  min-width: 60px;
+  height: 300px;
+  border-radius: 40px;
+  margin: 0 15px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+.slide_1:hover{
+  min-width: 250px;
+}
+.slide_1:hover .slide-info{
+  transform: rotate(0deg);
+  font-size: 22px;
+  left: 20px;
+  bottom: 20px;
+}
+.slide-info{
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  color: #fff;
+  transform: rotate(-90deg);
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
+
+.slide_2{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe1.jpg);
+}
+.slide_3{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe2.jpg);
+}
+.slide_4{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe3.jpg);
+}
+.slide_5{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe4.jpg);
+}
+.slide_6{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe5.jpg);
+}
+.slide_7{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img/recipe6.jpg);
+}
+.slide_8{ 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(./assets/img//recipe7.jpg);
+}
 /* .teal {
   background-color: #00695c !important;
 } */
