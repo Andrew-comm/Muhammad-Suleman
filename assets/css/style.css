@@ -114,6 +114,90 @@
   background-color: black;
 }
 
+.desert .row {
+  display: flex;
+  height: 88%;
+  align-items: center;
+}
+#name{
+  color:black;
+}
+.desert .col {
+  flex-basis: 50%;
+  margin-left: 50px;
+}
+
+.desert .col h1 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 100px;
+}
+
+.desert p {
+  font-size: 11px;
+  line-height: 15px;
+  color: #fff;
+}
+
+.desert button {
+  width: 180px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top: 30px;
+}
+
+.desert .card {
+  width: 200px;
+  height: 230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  margin-left: 30px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+
+.desert .card1 {
+  background-image: url(../img/pic-1.png);
+}
+
+.desert .card2 {
+  background-image: url(../img/pic-2.png);
+}
+
+.desert .card3 {
+  background-image: url(../img/pic-3.png);
+}
+
+.desert .card4 {
+  background-image: url(../img/pic-4.png);
+}
+
+.desert .card:hover {
+  transform: translateY(-10px);
+}
+
+.desert h5 {
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.desert .card p {
+  color: fff;
+  text-shadow: 0 0 15px #000;
+  font-size: 14px;
+}
+
 /* Buttons - Read Me, Contact Us */
 
 /*-----------------------------------*\
